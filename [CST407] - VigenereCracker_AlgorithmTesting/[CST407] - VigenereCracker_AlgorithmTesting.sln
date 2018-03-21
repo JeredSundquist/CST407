@@ -5,11 +5,6 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[CST407] - VigenereCracker_AlgorithmTesting", "[CST407] - VigenereCracker_AlgorithmTesting\[CST407] - VigenereCracker_AlgorithmTesting.csproj", "{F040D7E1-6327-4561-A3BB-64657288A69B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A5E35E0-EAEA-4C0E-BFCB-EDD70F1F6D6E}"
-	ProjectSection(SolutionItems) = preProject
-		FreqDict.txt = FreqDict.txt
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

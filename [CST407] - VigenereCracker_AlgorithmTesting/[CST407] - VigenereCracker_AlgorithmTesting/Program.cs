@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;//<---added
 using System.Text;//<---added
+using System.Resources;
 
 namespace _CST407____VigenereCracker_AlgorithmTesting
 {
@@ -18,9 +19,9 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
     class Program
     {
         //member variables
-        static string mCipher = "ABCDEFGHIABCABC";//"YYCIISPRYSGYCHVVSHAKLXCCCKZKMPGPTQUAPKZIRZIVWMBSMWEVDMWFCVLKLLGKEKYYIMJDSTUZTVYG";//<---stores cipher message :NOTE: Can be changed here and will be text input in windows form app:"GENERALPHONGISREADYTHEKINGISINPLAYALLTHEPIECESMOVEATMIDNIGHTTHETARGETISLORDVADER"
+        static string mCipher = "UBPTKWVEFYGLYGMEKYTXIGUSXRKZIEVRMJUALZYLNRRWKVNXYWIPUSYFIISEDCVYINKGXWJASPSYMSFHSWGVVYIYALHXKAQGGVXKCSIELHKVQKWWDKEADGUXASNILVNGRFWXVUCMDEIFZEMWNWVVSXVFXAWAKRGJIUVRVWCCXYWZKVXGSGTWVUSWEXKQMXHVLLGXVHOCCKJWRUVSYMLVIEUCYRWKWCCJFJGGUSGLBTEDWVKTEGKCSISQXJVRHNYBFVJINVGMAICSWBSJEJDWHCIUQAJFWXGJESEWRVIMVZUGHEABQELTVURGLKIFYMFGZQIZFKUFJMGHRSDEYPZWFDIDOZFKHFVTFUGIESMPNLBUBISVKXCSPBKBWMJSRVZGHEGJRZKXEIIWWHIMRDWMVRGWXNWVDIEKIWLBTTFKXEFPHFCPPESXKFRLSMILVFIYTSEVQPVSSXVCIZJIJRUKSXZIMDYPHVJRKBMMSEWVLKLEYIOKYTQVVXQRGVWJIXYWGJRPEWHVIZFEOZPBLUCXJHIGTLBFDPRLSVAZRPZCRLYWTNVHZWXHYGHSTKJHJMDGRDPGUATJMDJESXKFRTDFXFVJEVZSGCYCRVVCERQXAHISFXJKTIPANWXYWZKVAMZUIPRGWDFVWWLXRXGRDFXAFIGXYSRFJSNLBKMVLRCDEGVICGYARCSYKEUILRAPCEHTFXREDTSFZETKQTPCOEUKLXDCCGYHMPFJNKLTWZKXCEGXLIRSDEYPZWFAHHSLLLGRWMSMXESMXVYINFZPZFJEDCIIJIHTVUXUWSKLBTYJWSHRQXJCREEYVQLRWXIGGVKXJVVXHLDQGLIFYMFLIRSDHVQDMLWQXXYLLGJSOAYIWIWMPJXTDFXRXLLGEINLLPPZKXUFYOSHCEGZSWDETKJGMDWQKEMLLYGEEVTTVTTJCCKKGRGXSMAUIIRUICJIYALTFVLAGVRZGPTVEEIPKEGVWDQDMRKJXYGLRIJLLKJGHEJGSDAWGWSEDILIUTCVYIYSCAYIWSHKLXTUNSWHMIJMGNUHMFFSHTYUSCCEGJMNIMLCYSTIGZQBMGYHTAIWTWSPBUUCGYSVIVWHXUUEZDYTVSYWZUITLMXVEGLCRSDEYPZWMJYHSCNICKXAWMPQVLMOVMGKOGKVFXIRMGKCCWFMXJMMXLHPQYSHGIELWXILVGTVZQBKGDJKZINRXXKUCHKZIFZIFJYVMDWWWUHXFFNPFGOGUZNDHTVRTPGZRMZYHITAVELQLLUCGVKXJVEWECCMJLVCKMHFWWSJWZKVXGSGPWKZIHFGNKIUMKKVGJMLLUCGVLSEFQFMHXWKWBRRRLAICMESWKRXAWJDTLDEVZSGVCHXIAFWKMHFCCWFMXJMMXLHPQIWJNVGMWXILVUSWEXKQMISGGKTRTAQNWIEGRXZIMFUBIJWXTZFTDAGSLHWVYEMHLTHFEMPRXXVCCXYWLKXLESHSWIWTTVWXFNTHRKQCCPYJURXZGRQWXAWMDYKZZKVXGSGTWVHSRLPTLCDRMAIVEEFVYRPRKWKWMXVXTWGAXGKLXVUBEXWXQKLXSATRTQWTVTNLUIMFFMPWPBUNTHSQXJVFTQIUTZYWFZWTKNTVGJIUZHXFNZIEFIFPELKCVRVVGKRELAACMWAGCEXLZUGIFXXJVIQHUCHVVIHWSKLCCZZWXPRQBFHPXZGRCCWXUOGMKQEEKMHFGTQFJEPUYFFMPQFXQCPLXSOILFJMBVHTHLDKISQHFVVGPTVKSGVZSGKNDFVUETIMXVIJXSQXJVGXFNGECARVVPEAATRTWEIVRVQQWMTZAQLPWHLTGVVICEHKWGPMEARHFVVWUUXVJEPPGHEGXXDWRVFJNKZDVTWWVFWHMNWZZWXPRQTKIUJZUMCCWBFQPWYARIKSGSHSWRAKQEAHJETHKGEEHYBJYPRUVIRCSRFYLVVKSWIGXKZDVKZIEFYGLYGMEKYTXIGUSTJWGVVZROAYIRREXJVKOFJDWZLMQEGHFNXRLWHVFHXLYGMFJEVVMGGWISSWVVYIIJYHMUWRVJIGLBXWGWVUFRTDGXPZLETPVXHLTWVFXCKMOWATRVJENDEQOYAPKSCNFVTFXLLZLIJFYLWUSZZKITFROAYIRREACCXPJIHXFOXQJEBYICJFJEHZVLLBPRUSWUVWLEYCXKZIAIIMMLCIUOMVYVXUIBQVFHCKMHFMUSISQCJWBNYCINUSODMMEYCXZFGNLHBFAIVFGTUBIGFYSCSSGMVHTOUNJIGQFVTEGSXRXYVQLRWXIGGVKFWKEIHLDZVVEFUMMAICECEEVVVBSFPRUSHXZWHJSHYGHSTKMGLBXWTDMORXXVWXECDIPUYEDYHELLLQIMSWXILVXMTJXFSDDVTAEEFYGLYGMEKYTXIGUSEVFYVCDWBFWTXYWWKXRBFADJEKEOFRHUNDFVJLGVRWGLHIUSWCZKHFMIEKASPGVHHIHECLSNRYGUBPZZDPCXIWWZTRJWTTFKKSGXRKZINZKALFNTFHYNRXXVVJXJLVCKIZAWPPCQMOGSKLUCXTWRVIEEZCVLCSRFJXAWWXEJUSWEXXJCCWLJKGEGRJIAIXJIYRJMWLPRZFXGIEZWHRCKSWMWSKUYCSKWHKENTFOPVPLLCKWNHJDVKLSKIVXYOAEIXSTDEMAICWWWPNLRWWLILVBYTZWWAWIMFFSHEIBLBTVKZIOREZFIGXYWGKMMEAUCEZVQKJWBGHRECDIFKLXMMDTVJEVZSGKGXWJASPLWHENWIKSWMWSKUYGITGQOVRWWXXRJLICUXASNRMRTIEYEKYYSAZLLVYMLJYHTFFWKSMEANNMEEEAUIYWHHIJWGTVXTJSBGESQCIEPWHIJLJXJVVIJIBMJARIWEKWUHXUAZKJMHFWWMVXHGJQHFXUMKRKGIEEVUQPRFOEYIVCCCXVJQUFJFWHBSEWCCEHFSNTVZWPFLVBFAPPCLLGUMLUOHWZGRCSSNLHTAJLVCKIZAYHYEVITKLXUIJRKWVKEWNJATRTQVWSVBUNWILKVGJTHFMTXFUSODYGAMIEUNEPTILAHHSLLLXZIMFUBGFFXKEYXVNDIDHLCJMSWUBMCAXCICUMCAHLHXJVMGXFJBFXQKCMMSLNLRJHYRVXSHSEUNMUVVLSHSIJHIEZEEDSILVARVISWMWIMFFSHKLXZYAMTGTVVVUGLCIZFJCEXKQUIXRUOTVKTAHTHKZIOZPBLUGCZXRQKXAWJDPZLMERPBFCIMRLMXVJHJNWIXNRWEXBDNWIMAIVTSGYUSEGLIFKLXALIETLMEJEGVBJQZDMCKIWSMJTVJMQIEKNHUSIUICKXAWXTPKSLCDPXLIUEGTEEZRCSHJEIQHWIMGYNWMJHITZSWXLDQVSVNPYGLCAGZNMNLRKWMITRJENPDXVNWIUAIOIIZAGTMEEMFTMTAHCSMSXKFRLDYSXYWEOVVBUUCWZVIQWXAWXJECWJHFVMLILIRCIPKLXNCTXTGRIJVNJUASIYEPZDTLCDRRFHVFQHTCAMQWXJVTXSMPRKJCVFHXXYCHZLWGCJUQFPXVLLGGVHYLPQJZEFVBISHSIUTIAFRWLBTEXWREPWVSJPGZLCVFEWECCMJLITKLXEUCHFNITKLXUIJVJWSHKLXKNPXZGREVHXVCIWDSRCXIFWHIXFLLGDEVNNWMJWBGIGBKYRECDIFFTXJUIMFFWYZXVZVPGBWRFVHHFHDZVEFGIXAWMPQVVEAFRPZCRLUAWUZHXFNVIEWVCCWXFWDYISKGUFRLBTOVFRGUC";//<---stores cipher message :NOTE: Can be changed here and will be text input in windows form app:"GENERALPHONGISREADYTHEKINGISINPLAYALLTHEPIECESMOVEATMIDNIGHTTHETARGETISLORDVADER"
         static string mAlphabet = "abcdefghijklmnopqrstuvwxyz";//<---used as an easier way to set key values, leaving the frequency file with only the corresponding double values: makes iteration and key value pair assignments easier :USEDIN: FillFreqDict()
-        static string mFilePath = @"C:\Users\Jered\source\repos\[CST407] - VigenereCracker_AlgorithmTesting\FreqDict.txt";//<---file path to letter frequency file   
+        static string mFilePath = @"C:\Users\Jered\source\repos\CST407\[CST407] - VigenereCracker_AlgorithmTesting\[CST407] - VigenereCracker_AlgorithmTesting\Resources\FreqDict.txt";//<---file path to letter frequency file  
         static int mProbKeyLength = 0;//<---stores probable key length during string testing: initial value set to 0 :USEDIN: FindKeyLength(), CipherToKeyLenSets(), LetterFreqAnalysis()
         static Dictionary<char,double> mFrequency = new Dictionary<char, double>();//<---stores (key char)alphabet a-z: stores (value double)occurance probabilities :NOTE: Based on letter probabilities in the english language
         static List<string> mKeyLenSets = new List<string>();//<---stores sets of strings of key length = mProbKeyLength :RTRNBY: CipherToKeyLenSets()
@@ -45,7 +46,7 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
             double value;
 
             //iterate through file stream
-            using (StreamReader reader = File.OpenText(filePath))
+            using (StreamReader reader = File.OpenText(filePath)/*File.OpenText(filePath)*/)
             {
                 //local variables
                 int ndx = 0;//<---indexer for mAlphabet
@@ -152,8 +153,8 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
                         //count the distance between occurrences: patternDistance = ((iterNdx - baseNdx) * numCharacters
                         patternDistance = Math.Abs((iterNdx - baseNdx) * numCharacters);//<---ensure none negative values
 
-                        //if pattern
-                        if (!graphPatterns.ContainsKey(patternDistance) || !graphPatterns.ContainsValue(pattern))
+                        //if pattern is NOT already in dictionary
+                        if (!graphPatterns.ContainsKey(patternDistance) && !graphPatterns.ContainsValue(pattern))
                         {
                             //store key value pair in dictionary
                             graphPatterns.Add(patternDistance, pattern);
@@ -165,101 +166,92 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
             return graphPatterns;
         }
         /*
-        //  FUNC:   FindKeyLength (Dictionary arg1, Dictionary arg2, Dictionary arg3)
-        //  TASK:   Compiles most common factors found within each dictionary to guess key length
+        //  FUNC:   FactorDictionaries (Dictionary arg1, Dictionary arg2, Dictionary arg3)
+        //  TASK:   Compiles most common factors found within each dictionary and returns a sorted list of those factors
         //  ARGS:   3 dictionaries from ProcessGraphPatterns(): arg1 di, arg2 tri, arg3 quad
-        //  RTRN:   Int
+        //  RTRN:   List<int>
         */
-        public static int FindKeyWordLength(Dictionary<int, string> di, Dictionary<int, string> tri, Dictionary<int, string> quad)
+        public static List<int> FactorDictionaries(Dictionary<int, string> di, Dictionary<int, string> tri, Dictionary<int, string> quad)
         {
             //local variables
             List<int> factors = new List<int>();//<---list of considered factors
-            int factor = 0;//<---increments to signify factor was found in di, tri, quad dictionaries: NOTE: each factors variable list element gets it's own copy of this variable
-            int factorLimit = 20;//<---limits the number of factors considered in factor list
-            int tryFactor = 1;
-
-            //populate list with there own copy of factor variable: each incremented individually for each factor in each dictionary
-            for (int ndx = 0; ndx < factorLimit; ndx++)
-            {
-                factors.Add(factor);
-            }
 
             //process dictionaries and increment individual list factors: TODO: May need to fix indexing
-            foreach (int key in di.Keys)//<---di patterns
+            //Di patterns__________________________________________________________________________
+            foreach (int key in di.Keys)
             {
-                //set key factor
-                int dictFactor = key;
+                int factorMax = (int)Math.Sqrt(key);//rounds down
 
-                //find modulo factors
-                if (dictFactor % tryFactor == 0)
+                for(int tryFactor = 1; tryFactor <= factorMax; ++tryFactor)
                 {
-                    //increment factors found by modulo
-                    factors[key] += 1;
-
-                    //find factors by division once we know we have modulo
-                    if (dictFactor != dictFactor / tryFactor)
-                        factors[dictFactor / tryFactor] += 1;
+                    if(key % tryFactor == 0)
+                    {
+                        factors.Add(tryFactor);
+                        if(tryFactor != key/tryFactor)
+                        {
+                            factors.Add(key / tryFactor);
+                        }
+                    }
                 }
-
-                //increment tryFactor variable
-                tryFactor++;
             }
 
-            //reset the tryFactor variable for tri patterns
-            tryFactor = 1;
-
-            //TRI PATTERNS
+            //Tri patterns_________________________________________________________________________
             foreach (int key in tri.Keys)
             {
-                //set key factor
-                int dictFactor = key;
+                int factorMax = (int)Math.Sqrt(key);//rounds down
 
-                //find modulo factors
-                if (dictFactor % tryFactor == 0)
+                for (int tryFactor = 1; tryFactor <= factorMax; ++tryFactor)
                 {
-                    //increment factors found by modulo
-                    factors[key] += 1;
-
-                    //find factors by division once we know we have modulo
-                    if (dictFactor != dictFactor/ tryFactor)
-                        factors[dictFactor / tryFactor] += 1;
+                    if (key % tryFactor == 0)
+                    {
+                        factors.Add(tryFactor);
+                        if (tryFactor != key / tryFactor)
+                        {
+                            factors.Add(key / tryFactor);
+                        }
+                    }
                 }
-
-                //increment tryFactor variable
-                tryFactor++;
             }
 
-            //reset the tryFactor variable for quad patters
-            tryFactor = 1;
-
-            //QUAD PATTERNS
+            //Quad patterns________________________________________________________________________
             foreach (int key in quad.Keys)//<---quad patterns
             {
-                //set key factor
-                int dictFactor = key;
+                int factorMax = (int)Math.Sqrt(key);//rounds down
 
-                //find modulo factors
-                if (dictFactor % tryFactor == 0)
+                for (int tryFactor = 1; tryFactor <= factorMax; ++tryFactor)
                 {
-                    //increment factors found by modulo
-                    factors[key] += 1;
-
-                    //find factors by division once we know we have modulo
-                    if (dictFactor != dictFactor / tryFactor)
-                        factors[dictFactor / tryFactor] += 1;
+                    if (key % tryFactor == 0)
+                    {
+                        factors.Add(tryFactor);
+                        if (tryFactor != key / tryFactor)
+                        {
+                            factors.Add(key / tryFactor);
+                        }
+                    }
                 }
-
-                //increment tryFactor variable
-                tryFactor++;
             }
 
-            //search factors list for greatest && most frequently occurring factors
+            //return factor list
+            return factors;
+        }
+        /*
+        //  FUNC:   AutoRefineFactorList(List arg)
+        //  TASK:   Makes a series of educated guesses about the factors in the list to produce a more refined set of possible key lengths
+        //  ARGS:   List<int>
+        //  RTRN:   List<int>
+        */
+        public static List<int> AutoRefineFactorList(List<int> factors)
+        {
+            //remove least likely factors
+            //group by matching factors
+            //order from most occurring to least occurring factors
+            //suggest most occurring factor as key length
+            //factors.RemoveAll(n => n == 1);
+            //var group = factors.GroupBy(i => i).ToList();
+            //int max = group.Max(c => c.Count());
+            //var most = group.Where(d => d.Count() == max).Select(c => c.Key).ToList();
 
-
-            //set key length
-
-            //return probable key length
-            return mProbKeyLength;
+            return factors;
         }
         /*
         //  FUNC:   CipherToKeyLenSetsAnalysis(string arg, int arg)
@@ -287,15 +279,28 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
         {
             foreach (KeyValuePair<int, string> dict in inDict)
             {
-                Console.Write("GraphType[" + graphType + "]:\t Factor: " + dict.Key + "\t Pattern: " + dict.Value + "\n");
+                Console.Write("GraphType[" + graphType + "]:\t Distance: " + dict.Key + "\t Pattern: " + dict.Value + "\n");
+            }
+        }
+        /*
+        //  FUNC:   PrintFactors (List arg)
+        //  TASK:   Print the contents of a list
+        //  ARGS:   List<int>
+        //  RTRN:   Void
+        */
+        public static void PrintList(List<int> factorList)
+        {
+            foreach (int num in factorList)
+            {
+                Console.Write("Factor[" + num + "]\n");
             }
         }
         //MAIN PROGRAM EXECUTION===================================================================
         static void Main(string[] args)
         {
             //Notes for testing
-            //Cipher text  = YYCIISPRYSGYCHVVSHAKLXCCCKZKMPGPTQUAPKZIRZIVWMBSMWEVDMWFCVLKLLGKEKYYIMJDSTUZTVYG
-            //Plain text = GENERALPHONGISREADYTHEKINGISINPLAYALLTHEPIECESMOVEATMIDNIGHTTHETARGETISLORDVADER
+            //Cipher text  = UBPTKWVEFYGLYGMEKYTXIGUSXRKZIEVRMJUALZYLNRRWKVNXYWIPUSYFIISEDCVYINKGXWJASPSYMSFHSWGVVYIYALHXKAQGGVXKCSIELHKVQKWWDKEADGUXASNILVNGRFWXVUCMDEIFZEMWNWVVSXVFXAWAKRGJIUVRVWCCXYWZKVXGSGTWVUSWEXKQMXHVLLGXVHOCCKJWRUVSYMLVIEUCYRWKWCCJFJGGUSGLBTEDWVKTEGKCSISQXJVRHNYBFVJINVGMAICSWBSJEJDWHCIUQAJFWXGJESEWRVIMVZUGHEABQELTVURGLKIFYMFGZQIZFKUFJMGHRSDEYPZWFDIDOZFKHFVTFUGIESMPNLBUBISVKXCSPBKBWMJSRVZGHEGJRZKXEIIWWHIMRDWMVRGWXNWVDIEKIWLBTTFKXEFPHFCPPESXKFRLSMILVFIYTSEVQPVSSXVCIZJIJRUKSXZIMDYPHVJRKBMMSEWVLKLEYIOKYTQVVXQRGVWJIXYWGJRPEWHVIZFEOZPBLUCXJHIGTLBFDPRLSVAZRPZCRLYWTNVHZWXHYGHSTKJHJMDGRDPGUATJMDJESXKFRTDFXFVJEVZSGCYCRVVCERQXAHISFXJKTIPANWXYWZKVAMZUIPRGWDFVWWLXRXGRDFXAFIGXYSRFJSNLBKMVLRCDEGVICGYARCSYKEUILRAPCEHTFXREDTSFZETKQTPCOEUKLXDCCGYHMPFJNKLTWZKXCEGXLIRSDEYPZWFAHHSLLLGRWMSMXESMXVYINFZPZFJEDCIIJIHTVUXUWSKLBTYJWSHRQXJCREEYVQLRWXIGGVKXJVVXHLDQGLIFYMFLIRSDHVQDMLWQXXYLLGJSOAYIWIWMPJXTDFXRXLLGEINLLPPZKXUFYOSHCEGZSWDETKJGMDWQKEMLLYGEEVTTVTTJCCKKGRGXSMAUIIRUICJIYALTFVLAGVRZGPTVEEIPKEGVWDQDMRKJXYGLRIJLLKJGHEJGSDAWGWSEDILIUTCVYIYSCAYIWSHKLXTUNSWHMIJMGNUHMFFSHTYUSCCEGJMNIMLCYSTIGZQBMGYHTAIWTWSPBUUCGYSVIVWHXUUEZDYTVSYWZUITLMXVEGLCRSDEYPZWMJYHSCNICKXAWMPQVLMOVMGKOGKVFXIRMGKCCWFMXJMMXLHPQYSHGIELWXILVGTVZQBKGDJKZINRXXKUCHKZIFZIFJYVMDWWWUHXFFNPFGOGUZNDHTVRTPGZRMZYHITAVELQLLUCGVKXJVEWECCMJLVCKMHFWWSJWZKVXGSGPWKZIHFGNKIUMKKVGJMLLUCGVLSEFQFMHXWKWBRRRLAICMESWKRXAWJDTLDEVZSGVCHXIAFWKMHFCCWFMXJMMXLHPQIWJNVGMWXILVUSWEXKQMISGGKTRTAQNWIEGRXZIMFUBIJWXTZFTDAGSLHWVYEMHLTHFEMPRXXVCCXYWLKXLESHSWIWTTVWXFNTHRKQCCPYJURXZGRQWXAWMDYKZZKVXGSGTWVHSRLPTLCDRMAIVEEFVYRPRKWKWMXVXTWGAXGKLXVUBEXWXQKLXSATRTQWTVTNLUIMFFMPWPBUNTHSQXJVFTQIUTZYWFZWTKNTVGJIUZHXFNZIEFIFPELKCVRVVGKRELAACMWAGCEXLZUGIFXXJVIQHUCHVVIHWSKLCCZZWXPRQBFHPXZGRCCWXUOGMKQEEKMHFGTQFJEPUYFFMPQFXQCPLXSOILFJMBVHTHLDKISQHFVVGPTVKSGVZSGKNDFVUETIMXVIJXSQXJVGXFNGECARVVPEAATRTWEIVRVQQWMTZAQLPWHLTGVVICEHKWGPMEARHFVVWUUXVJEPPGHEGXXDWRVFJNKZDVTWWVFWHMNWZZWXPRQTKIUJZUMCCWBFQPWYARIKSGSHSWRAKQEAHJETHKGEEHYBJYPRUVIRCSRFYLVVKSWIGXKZDVKZIEFYGLYGMEKYTXIGUSTJWGVVZROAYIRREXJVKOFJDWZLMQEGHFNXRLWHVFHXLYGMFJEVVMGGWISSWVVYIIJYHMUWRVJIGLBXWGWVUFRTDGXPZLETPVXHLTWVFXCKMOWATRVJENDEQOYAPKSCNFVTFXLLZLIJFYLWUSZZKITFROAYIRREACCXPJIHXFOXQJEBYICJFJEHZVLLBPRUSWUVWLEYCXKZIAIIMMLCIUOMVYVXUIBQVFHCKMHFMUSISQCJWBNYCINUSODMMEYCXZFGNLHBFAIVFGTUBIGFYSCSSGMVHTOUNJIGQFVTEGSXRXYVQLRWXIGGVKFWKEIHLDZVVEFUMMAICECEEVVVBSFPRUSHXZWHJSHYGHSTKMGLBXWTDMORXXVWXECDIPUYEDYHELLLQIMSWXILVXMTJXFSDDVTAEEFYGLYGMEKYTXIGUSEVFYVCDWBFWTXYWWKXRBFADJEKEOFRHUNDFVJLGVRWGLHIUSWCZKHFMIEKASPGVHHIHECLSNRYGUBPZZDPCXIWWZTRJWTTFKKSGXRKZINZKALFNTFHYNRXXVVJXJLVCKIZAWPPCQMOGSKLUCXTWRVIEEZCVLCSRFJXAWWXEJUSWEXXJCCWLJKGEGRJIAIXJIYRJMWLPRZFXGIEZWHRCKSWMWSKUYCSKWHKENTFOPVPLLCKWNHJDVKLSKIVXYOAEIXSTDEMAICWWWPNLRWWLILVBYTZWWAWIMFFSHEIBLBTVKZIOREZFIGXYWGKMMEAUCEZVQKJWBGHRECDIFKLXMMDTVJEVZSGKGXWJASPLWHENWIKSWMWSKUYGITGQOVRWWXXRJLICUXASNRMRTIEYEKYYSAZLLVYMLJYHTFFWKSMEANNMEEEAUIYWHHIJWGTVXTJSBGESQCIEPWHIJLJXJVVIJIBMJARIWEKWUHXUAZKJMHFWWMVXHGJQHFXUMKRKGIEEVUQPRFOEYIVCCCXVJQUFJFWHBSEWCCEHFSNTVZWPFLVBFAPPCLLGUMLUOHWZGRCSSNLHTAJLVCKIZAYHYEVITKLXUIJRKWVKEWNJATRTQVWSVBUNWILKVGJTHFMTXFUSODYGAMIEUNEPTILAHHSLLLXZIMFUBGFFXKEYXVNDIDHLCJMSWUBMCAXCICUMCAHLHXJVMGXFJBFXQKCMMSLNLRJHYRVXSHSEUNMUVVLSHSIJHIEZEEDSILVARVISWMWIMFFSHKLXZYAMTGTVVVUGLCIZFJCEXKQUIXRUOTVKTAHTHKZIOZPBLUGCZXRQKXAWJDPZLMERPBFCIMRLMXVJHJNWIXNRWEXBDNWIMAIVTSGYUSEGLIFKLXALIETLMEJEGVBJQZDMCKIWSMJTVJMQIEKNHUSIUICKXAWXTPKSLCDPXLIUEGTEEZRCSHJEIQHWIMGYNWMJHITZSWXLDQVSVNPYGLCAGZNMNLRKWMITRJENPDXVNWIUAIOIIZAGTMEEMFTMTAHCSMSXKFRLDYSXYWEOVVBUUCWZVIQWXAWXJECWJHFVMLILIRCIPKLXNCTXTGRIJVNJUASIYEPZDTLCDRRFHVFQHTCAMQWXJVTXSMPRKJCVFHXXYCHZLWGCJUQFPXVLLGGVHYLPQJZEFVBISHSIUTIAFRWLBTEXWREPWVSJPGZLCVFEWECCMJLITKLXEUCHFNITKLXUIJVJWSHKLXKNPXZGREVHXVCIWDSRCXIFWHIXFLLGDEVNNWMJWBGIGBKYRECDIFFTXJUIMFFWYZXVZVPGBWRFVHHFHDZVEFGIXAWMPQVVEAFRPZCRLUAWUZHXFNVIEWVCCWXFWDYISKGUFRLBTOVFRGUC
+            //Plain text =    chapter   Counterinsurgency in the Central Highlands By the end of      not only the US Mission but also for the first time President Diem recognized that the VC posed an immediate threat to the GVN presence in the Vietnamese countryside The growing sense of urgency was reinforced on the American side by the November election of John F Kennedy whose opponent Richard Nixon had accused him of being soft on communism Looking for an arena in which to establish his anticommunist credentials Kennedy selected the postcolonial nations as the new cold war battleground Soviet leader Nikita Khrushchev seemed to accept the challenge in a militant speech in January      in which he pledged support for socalled wars of national liberation  Kennedy came into office with the view that Laos bordering on both North and South Vietnam and on China Burma Thailand and Cambodia as well was the linchpin of US resistance to communism in Southeast Asia But the unfavorable prospects for the use of American ground forces there prompted him to compromise with the Soviets reinstalling the neutralist Souvanna Phouma as prime minister and preparing to negotiate a ceasefire between government and communist forces This compromise followed by the failure of the Bay of Pigs invasion of Cuba in April      risked provoking new Republican charges of a failure of effective anticommunist resolve At the same time insurgent gains in South Vietnam had erased the optimism of the late     s and the Diem regime suddenly looked vulnerable In these circumstances  the administration chose Vietnam as the focus of its resistance to communist expansion in Asia  The population distribution in South Vietnam reflected the countrys topography The nonVietnamese tribal groups that predominated in the highlands represented a small fraction of the South Vietnamese population Vietnam Declassified    Despite the damage to the agencys reputation inflicted by the Bay of Pigs disaster President Kennedy assigned CIA a significant share of the expanded effort in Vietnam In National Security Action Memorandum NSAM    of    May      he authorized a program for covert actions to be carried out by the Central Intelligence Agency which would precede and remain in force after any commitment of US forces to South Vietnam  As officials in Washington and Saigon worked to acquire and deploy new resources for the counterinsurgency effort in Vietnam the GVN position continued to deteriorate In October      the president sent his personal military representative General Maxwell Taylor and White House adviser on Vietnam Walt W Rostow to Saigon for a firsthand assessment They returned with recommendations for a massive new commitment including      troops Kennedy backed away from deploying ground forces but approved additional material and advisory support In this climate DCI Allen Dulles authorized the first major CIA counterinsurgency program since the signing of NSAM    On    October he endorsed a Saigon Station proposal to launch a village defense program in the lightly populated but strategically important Central Highlands  The CIAs counterinsurgency role grew after an interagency task force noted in January      that support to irregular formations fell under the jurisdiction of neither the MAAG nor the civilian aid mission called the US Operations Mission USOM The task force recommended instead that CIA be charged with this responsibility In May Defense Secretary McNamara went further promising Far East Division Chief Desmond FitzGerald a blank check    in terms of men money and materiel  During all the discussion about new strategies under the counterinsurgency rubric the US response to communist advances in South Vietnam continued to emphasize a military buildup The influx of military hardware and advisers  and especially the introduction of the helicopterborne infantry attack regained the military if not the political initiative for the GVN until the Viet Cong adapted their tactics and humiliated a superior ARVN force at the Delta hamlet of Ap Bac in January      During this period from early      until civil unrest paralyzed the Diem regime in mid     CIA innovations led the American side of the dual effort to weaken the Viet Congs rural organization and to mobilize the peasantry to defend itself By late      the programs had expanded beyond the agencys capacity to administer them and over the course of      the station ceded its management to the MACV This exercise called Operation Switchback ended on   November      the same day on which dissident generals encouraged by the Kennedy
             //Key = SUPERSECRET
             //Key Length = 11
 
@@ -303,6 +308,7 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
             int diGraph = 2;
             int triGraph = 3;
             int quadGraph = 4;
+            int keyLength = 0;
             Dictionary<char, double> FreqDict= new Dictionary<char, double>();
             Dictionary<int, string> patternDictionaryDi = new Dictionary<int, string>();
             Dictionary<int, string> patternDictionaryTri = new Dictionary<int, string>();
@@ -310,6 +316,7 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
             List<string> diGraphList = new List<string>();
             List<string> triGraphList = new List<string>();
             List<string> quadGraphList = new List<string>();
+            List<int> factoredDictionaries = new List<int>();
 
             //fill dictionary(takes string filepath)
             FreqDict = FillFreqDict(mFilePath);
@@ -328,7 +335,8 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
             PrintPatterns(patternDictionaryQuad, 4);
 
             //process graph dictionaries in FindKeyLength(takes 3 dictionary patternDictioanaries (di, tri, quad))
-            FindKeyWordLength(patternDictionaryDi, patternDictionaryTri, patternDictionaryQuad);
+            factoredDictionaries = FactorDictionaries(patternDictionaryDi, patternDictionaryTri, patternDictionaryQuad);
+            PrintList(factoredDictionaries);
 
             //would you like to guess key length or keep processing?
             //would you like to guess key or keep processing?
