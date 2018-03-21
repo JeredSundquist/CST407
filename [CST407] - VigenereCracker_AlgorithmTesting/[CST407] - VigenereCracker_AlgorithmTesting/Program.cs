@@ -242,11 +242,18 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
         */
         public static List<int> AutoRefineFactorList(List<int> factors)
         {
-            //remove least likely factors
-            //group by matching factors
-            //order from most occurring to least occurring factors
+            //local variables
+            //List<int> refinedList = new List<int>();
+            
+            //remove highly unlikely factors
+            factors.RemoveAll(n => n == 1);//<---remove 1
+            factors.RemoveAll(n => n == 2);//<---remove 2
+            factors.RemoveAll(n => n > 20);//<---remove factors over 20
+            var dict = factors.GroupBy(n => n).ToDictionary(group => group.Key, group => group.Count());
+
+            //group by matching factors: order from most occurring to least occurring factors
+            //refinedList = factors;
             //suggest most occurring factor as key length
-            //factors.RemoveAll(n => n == 1);
             //var group = factors.GroupBy(i => i).ToList();
             //int max = group.Max(c => c.Count());
             //var most = group.Where(d => d.Count() == max).Select(c => c.Key).ToList();
@@ -338,7 +345,9 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
             factoredDictionaries = FactorDictionaries(patternDictionaryDi, patternDictionaryTri, patternDictionaryQuad);
             PrintList(factoredDictionaries);
 
-            //would you like to guess key length or keep processing?
+            //would you like to guess key length or auto refine?
+            factoredDictionaries = AutoRefineFactorList(factoredDictionaries);
+
             //would you like to guess key or keep processing?
 
             //keep console window open
