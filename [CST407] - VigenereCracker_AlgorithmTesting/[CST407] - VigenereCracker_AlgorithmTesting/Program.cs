@@ -21,7 +21,7 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
         //member variables
         static string mCipher = "UBPTKWVEFYGLYGMEKYTXIGUSXRKZIEVRMJUALZYLNRRWKVNXYWIPUSYFIISEDCVYINKGXWJASPSYMSFHSWGVVYIYALHXKAQGGVXKCSIELHKVQKWWDKEADGUXASNILVNGRFWXVUCMDEIFZEMWNWVVSXVFXAWAKRGJIUVRVWCCXYWZKVXGSGTWVUSWEXKQMXHVLLGXVHOCCKJWRUVSYMLVIEUCYRWKWCCJFJGGUSGLBTEDWVKTEGKCSISQXJVRHNYBFVJINVGMAICSWBSJEJDWHCIUQAJFWXGJESEWRVIMVZUGHEABQELTVURGLKIFYMFGZQIZFKUFJMGHRSDEYPZWFDIDOZFKHFVTFUGIESMPNLBUBISVKXCSPBKBWMJSRVZGHEGJRZKXEIIWWHIMRDWMVRGWXNWVDIEKIWLBTTFKXEFPHFCPPESXKFRLSMILVFIYTSEVQPVSSXVCIZJIJRUKSXZIMDYPHVJRKBMMSEWVLKLEYIOKYTQVVXQRGVWJIXYWGJRPEWHVIZFEOZPBLUCXJHIGTLBFDPRLSVAZRPZCRLYWTNVHZWXHYGHSTKJHJMDGRDPGUATJMDJESXKFRTDFXFVJEVZSGCYCRVVCERQXAHISFXJKTIPANWXYWZKVAMZUIPRGWDFVWWLXRXGRDFXAFIGXYSRFJSNLBKMVLRCDEGVICGYARCSYKEUILRAPCEHTFXREDTSFZETKQTPCOEUKLXDCCGYHMPFJNKLTWZKXCEGXLIRSDEYPZWFAHHSLLLGRWMSMXESMXVYINFZPZFJEDCIIJIHTVUXUWSKLBTYJWSHRQXJCREEYVQLRWXIGGVKXJVVXHLDQGLIFYMFLIRSDHVQDMLWQXXYLLGJSOAYIWIWMPJXTDFXRXLLGEINLLPPZKXUFYOSHCEGZSWDETKJGMDWQKEMLLYGEEVTTVTTJCCKKGRGXSMAUIIRUICJIYALTFVLAGVRZGPTVEEIPKEGVWDQDMRKJXYGLRIJLLKJGHEJGSDAWGWSEDILIUTCVYIYSCAYIWSHKLXTUNSWHMIJMGNUHMFFSHTYUSCCEGJMNIMLCYSTIGZQBMGYHTAIWTWSPBUUCGYSVIVWHXUUEZDYTVSYWZUITLMXVEGLCRSDEYPZWMJYHSCNICKXAWMPQVLMOVMGKOGKVFXIRMGKCCWFMXJMMXLHPQYSHGIELWXILVGTVZQBKGDJKZINRXXKUCHKZIFZIFJYVMDWWWUHXFFNPFGOGUZNDHTVRTPGZRMZYHITAVELQLLUCGVKXJVEWECCMJLVCKMHFWWSJWZKVXGSGPWKZIHFGNKIUMKKVGJMLLUCGVLSEFQFMHXWKWBRRRLAICMESWKRXAWJDTLDEVZSGVCHXIAFWKMHFCCWFMXJMMXLHPQIWJNVGMWXILVUSWEXKQMISGGKTRTAQNWIEGRXZIMFUBIJWXTZFTDAGSLHWVYEMHLTHFEMPRXXVCCXYWLKXLESHSWIWTTVWXFNTHRKQCCPYJURXZGRQWXAWMDYKZZKVXGSGTWVHSRLPTLCDRMAIVEEFVYRPRKWKWMXVXTWGAXGKLXVUBEXWXQKLXSATRTQWTVTNLUIMFFMPWPBUNTHSQXJVFTQIUTZYWFZWTKNTVGJIUZHXFNZIEFIFPELKCVRVVGKRELAACMWAGCEXLZUGIFXXJVIQHUCHVVIHWSKLCCZZWXPRQBFHPXZGRCCWXUOGMKQEEKMHFGTQFJEPUYFFMPQFXQCPLXSOILFJMBVHTHLDKISQHFVVGPTVKSGVZSGKNDFVUETIMXVIJXSQXJVGXFNGECARVVPEAATRTWEIVRVQQWMTZAQLPWHLTGVVICEHKWGPMEARHFVVWUUXVJEPPGHEGXXDWRVFJNKZDVTWWVFWHMNWZZWXPRQTKIUJZUMCCWBFQPWYARIKSGSHSWRAKQEAHJETHKGEEHYBJYPRUVIRCSRFYLVVKSWIGXKZDVKZIEFYGLYGMEKYTXIGUSTJWGVVZROAYIRREXJVKOFJDWZLMQEGHFNXRLWHVFHXLYGMFJEVVMGGWISSWVVYIIJYHMUWRVJIGLBXWGWVUFRTDGXPZLETPVXHLTWVFXCKMOWATRVJENDEQOYAPKSCNFVTFXLLZLIJFYLWUSZZKITFROAYIRREACCXPJIHXFOXQJEBYICJFJEHZVLLBPRUSWUVWLEYCXKZIAIIMMLCIUOMVYVXUIBQVFHCKMHFMUSISQCJWBNYCINUSODMMEYCXZFGNLHBFAIVFGTUBIGFYSCSSGMVHTOUNJIGQFVTEGSXRXYVQLRWXIGGVKFWKEIHLDZVVEFUMMAICECEEVVVBSFPRUSHXZWHJSHYGHSTKMGLBXWTDMORXXVWXECDIPUYEDYHELLLQIMSWXILVXMTJXFSDDVTAEEFYGLYGMEKYTXIGUSEVFYVCDWBFWTXYWWKXRBFADJEKEOFRHUNDFVJLGVRWGLHIUSWCZKHFMIEKASPGVHHIHECLSNRYGUBPZZDPCXIWWZTRJWTTFKKSGXRKZINZKALFNTFHYNRXXVVJXJLVCKIZAWPPCQMOGSKLUCXTWRVIEEZCVLCSRFJXAWWXEJUSWEXXJCCWLJKGEGRJIAIXJIYRJMWLPRZFXGIEZWHRCKSWMWSKUYCSKWHKENTFOPVPLLCKWNHJDVKLSKIVXYOAEIXSTDEMAICWWWPNLRWWLILVBYTZWWAWIMFFSHEIBLBTVKZIOREZFIGXYWGKMMEAUCEZVQKJWBGHRECDIFKLXMMDTVJEVZSGKGXWJASPLWHENWIKSWMWSKUYGITGQOVRWWXXRJLICUXASNRMRTIEYEKYYSAZLLVYMLJYHTFFWKSMEANNMEEEAUIYWHHIJWGTVXTJSBGESQCIEPWHIJLJXJVVIJIBMJARIWEKWUHXUAZKJMHFWWMVXHGJQHFXUMKRKGIEEVUQPRFOEYIVCCCXVJQUFJFWHBSEWCCEHFSNTVZWPFLVBFAPPCLLGUMLUOHWZGRCSSNLHTAJLVCKIZAYHYEVITKLXUIJRKWVKEWNJATRTQVWSVBUNWILKVGJTHFMTXFUSODYGAMIEUNEPTILAHHSLLLXZIMFUBGFFXKEYXVNDIDHLCJMSWUBMCAXCICUMCAHLHXJVMGXFJBFXQKCMMSLNLRJHYRVXSHSEUNMUVVLSHSIJHIEZEEDSILVARVISWMWIMFFSHKLXZYAMTGTVVVUGLCIZFJCEXKQUIXRUOTVKTAHTHKZIOZPBLUGCZXRQKXAWJDPZLMERPBFCIMRLMXVJHJNWIXNRWEXBDNWIMAIVTSGYUSEGLIFKLXALIETLMEJEGVBJQZDMCKIWSMJTVJMQIEKNHUSIUICKXAWXTPKSLCDPXLIUEGTEEZRCSHJEIQHWIMGYNWMJHITZSWXLDQVSVNPYGLCAGZNMNLRKWMITRJENPDXVNWIUAIOIIZAGTMEEMFTMTAHCSMSXKFRLDYSXYWEOVVBUUCWZVIQWXAWXJECWJHFVMLILIRCIPKLXNCTXTGRIJVNJUASIYEPZDTLCDRRFHVFQHTCAMQWXJVTXSMPRKJCVFHXXYCHZLWGCJUQFPXVLLGGVHYLPQJZEFVBISHSIUTIAFRWLBTEXWREPWVSJPGZLCVFEWECCMJLITKLXEUCHFNITKLXUIJVJWSHKLXKNPXZGREVHXVCIWDSRCXIFWHIXFLLGDEVNNWMJWBGIGBKYRECDIFFTXJUIMFFWYZXVZVPGBWRFVHHFHDZVEFGIXAWMPQVVEAFRPZCRLUAWUZHXFNVIEWVCCWXFWDYISKGUFRLBTOVFRGUC";//<---stores cipher message :NOTE: Can be changed here and will be text input in windows form app:"GENERALPHONGISREADYTHEKINGISINPLAYALLTHEPIECESMOVEATMIDNIGHTTHETARGETISLORDVADER"
         static string mAlphabet = "abcdefghijklmnopqrstuvwxyz";//<---used as an easier way to set key values, leaving the frequency file with only the corresponding double values: makes iteration and key value pair assignments easier :USEDIN: FillFreqDict()
-        static string mFilePath = @"C:\Users\Jered\source\repos\CST407\[CST407] - VigenereCracker_AlgorithmTesting\[CST407] - VigenereCracker_AlgorithmTesting\Resources\FreqDict.txt";//<---file path to letter frequency file  
+        static string mFilePath = @"C:\Users\Jered\source\CST407\[CST407] - VigenereCracker_AlgorithmTesting\[CST407] - VigenereCracker_AlgorithmTesting\Resources\FreqDict.txt";//<---file path to letter frequency file  
         static int mProbKeyLength = 0;//<---stores probable key length during string testing: initial value set to 0 :USEDIN: FindKeyLength(), CipherToKeyLenSets(), LetterFreqAnalysis()
         static Dictionary<char,double> mFrequency = new Dictionary<char, double>();//<---stores (key char)alphabet a-z: stores (value double)occurance probabilities :NOTE: Based on letter probabilities in the english language
         static List<string> mKeyLenSets = new List<string>();//<---stores sets of strings of key length = mProbKeyLength :RTRNBY: CipherToKeyLenSets()
@@ -240,7 +240,7 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
         //  ARGS:   List<int>
         //  RTRN:   List<int>
         */
-        public static List<int> AutoRefineFactorList(List<int> factors)
+        public static Dictionary<int, int> AutoRefineFactorList(List<int> factors)
         {
             //local variables
             //List<int> refinedList = new List<int>();
@@ -258,7 +258,7 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
             //int max = group.Max(c => c.Count());
             //var most = group.Where(d => d.Count() == max).Select(c => c.Key).ToList();
 
-            return factors;
+            return dict;
         }
         /*
         //  FUNC:   CipherToKeyLenSetsAnalysis(string arg, int arg)
@@ -284,6 +284,7 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
         */
         public static void PrintPatterns(Dictionary<int, string> inDict, int graphType)
         {
+            Console.Write("\nPATTERNS________________________________________________________________\n");
             foreach (KeyValuePair<int, string> dict in inDict)
             {
                 Console.Write("GraphType[" + graphType + "]:\t Distance: " + dict.Key + "\t Pattern: " + dict.Value + "\n");
@@ -295,11 +296,26 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
         //  ARGS:   List<int>
         //  RTRN:   Void
         */
-        public static void PrintList(List<int> factorList)
+        public static void PrintFactors(List<int> factorList)
         {
+            Console.Write("\nFACTORS_________________________________________________________________\n");
             foreach (int num in factorList)
             {
                 Console.Write("Factor[" + num + "]\n");
+            }
+        }
+        /*
+        //  FUNC:   PrintAutoRefinedFactors (Dictionary arg)
+        //  TASK:   Print the contents of a dictionary from auto refine factors
+        //  ARGS:   Dictionary<int, string>
+        //  RTRN:   Void
+        */
+        public static void PrintAutoRefinedFactors(Dictionary<int, int> inDict)
+        {
+            Console.Write("\nREFINED FACTORS_________________________________________________________\n");
+            foreach (KeyValuePair<int, int> dict in inDict)
+            {
+                Console.Write("Refined Factor[" + dict.Key + "]\t Occurrences: " + dict.Value + "\n");
             }
         }
         //MAIN PROGRAM EXECUTION===================================================================
@@ -320,6 +336,7 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
             Dictionary<int, string> patternDictionaryDi = new Dictionary<int, string>();
             Dictionary<int, string> patternDictionaryTri = new Dictionary<int, string>();
             Dictionary<int, string> patternDictionaryQuad = new Dictionary<int, string>();
+            Dictionary<int, int> refinedFactorList = new Dictionary<int, int>();
             List<string> diGraphList = new List<string>();
             List<string> triGraphList = new List<string>();
             List<string> quadGraphList = new List<string>();
@@ -343,10 +360,11 @@ namespace _CST407____VigenereCracker_AlgorithmTesting
 
             //process graph dictionaries in FindKeyLength(takes 3 dictionary patternDictioanaries (di, tri, quad))
             factoredDictionaries = FactorDictionaries(patternDictionaryDi, patternDictionaryTri, patternDictionaryQuad);
-            PrintList(factoredDictionaries);
+            PrintFactors(factoredDictionaries);
 
             //would you like to guess key length or auto refine?
-            factoredDictionaries = AutoRefineFactorList(factoredDictionaries);
+            refinedFactorList = AutoRefineFactorList(factoredDictionaries);
+            PrintAutoRefinedFactors(refinedFactorList);
 
             //would you like to guess key or keep processing?
 
